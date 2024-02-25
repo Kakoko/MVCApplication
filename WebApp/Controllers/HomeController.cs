@@ -4,9 +4,14 @@ namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public string Index()
         {
-            return View();
+            return "Hello from action method";
+        }
+
+        public string Error()
+        {
+            return "opps, something went wrong";
         }
     }
 }
